@@ -1,0 +1,226 @@
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: rgba(68, 126, 213, 0.12);
+}
+
+.white-color {
+    color: #fff;
+}
+
+.header .title {
+    font-size: 44px;
+    margin: 16px auto;
+    color: rgb(89, 89, 141);
+    text-align: center;
+    margin-bottom: 4px;
+}
+
+.header .title-introduce {
+    font-size: 16px;
+    margin: 12px auto;
+    text-align: center;
+}
+
+.header .title-name {
+    font-size: 18px;
+    max-width: 800px;
+    line-height: 28px;
+    margin-top: 0;
+}
+
+.content-data {
+    width: 800px;
+    max-width: 95%;
+    height: 400px;
+    margin: auto;
+    text-align: center;
+    border-radius: 12px;
+    /* background-color: #66FFFF; */
+    background: linear-gradient(145deg, #32afce, #6dd5ed);
+    color: #000;
+}
+
+.content-data .data-temperature,
+.content-data .data-humidity {
+    padding-top: 12px;
+    font-size: 18px;
+    float: left;
+    margin: 0;
+    margin-left: 45px;
+    list-style: none;
+}
+
+.content-data .data-led {
+    font-size: 20px;
+    margin-top: 24px;
+    list-style: none;
+    margin-bottom: 0;
+}
+
+.content-data .content-data-led {
+    margin-top: -20px;
+    font-size: 26px;
+}
+
+.content-data .data-led-blue {
+    margin: 10px 0;
+    margin-right: -6px;
+}
+
+.content-data .data-led-red {
+    margin: 10px 0;
+    margin-right: -6px;
+}
+
+.content-data .data-led-yellow {
+    margin: 10px 0;
+    margin-right: -6px;
+}
+
+.content-data .button-blue-on {
+    border: 0px solid #ccc;
+    padding: 8px 18px;
+    background-color: #0CD613FE;
+    margin-left: 60px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #444;
+}
+
+.content-data .button:hover {
+    opacity: 0.8;
+}
+
+.content-data .button-red-on {
+    border: 0px solid #ccc;
+    padding: 8px 18px;
+    background-color: #0CD613FE;
+    margin-left: 61px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #444;
+
+}
+
+.content-data .button-yellow-on {
+    border: 0px solid #ccc;
+    padding: 8px 18px;
+    background-color: #0CD613FE;
+    margin-left: 60px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #444;
+
+}
+
+.content-data .button-blue-off {
+    border: 0px solid #ccc;
+    padding: 8px 18px;
+    background-color: #E31B14FE;
+    border-radius: 4px;
+    color: #444;
+    cursor: pointer;
+
+}
+
+.content-data .button-red-off {
+    border: 0px solid #ccc;
+    padding: 8px 18px;
+    background-color: #E31B14FE;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #444;
+}
+
+.content-data .button-yellow-off {
+    border: 0px solid #ccc;
+    padding: 8px 18px;
+    background-color: #E31B14FE;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #444;
+}
+
+.content-data .fa-lightbulb {
+    font-size: 18px;
+}
+
+.content-data .light-red {
+    margin-left: 19px;
+}
+
+.content-data .button {
+    color: #fff;
+}
+
+.micro {
+    color: #fff;
+    width: 120px;
+    height: 75.6px;
+    float: right;
+    cursor: pointer;
+    margin-top: 16px;
+}
+
+.microphone {
+    font-size: 46px;
+}
+
+.assistant {
+    font-size: 18px;
+    margin-top: 8px;
+}
+
+.recording-icon {
+    display: none;
+    margin-top: 22px;
+    width: 20px;
+    height: 20px;
+    background-color: #e22d2d;
+    border-radius: 50%;
+    animation: pulse 1.5s infinite linear;
+}
+
+.try-again {
+    font-size: 13px;
+    margin-top: 6px;
+    /* animation: tryAgain 1s linear; */
+    display: none;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 3px 0 rgba(197, 22, 22, 0.3);
+    }
+
+    65% {
+        box-shadow: 0 0 3px 8px rgba(201, 33, 33, 0.3);
+    }
+
+    100% {
+        box-shadow: 0 0 3px 10px rgba(247, 23, 23, 0);
+    }
+}
+
+@keyframes tryAgain{
+    0% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@media (max-width: 740px) {
+    .title-name {
+        display: none;
+    }
+}
+
+
