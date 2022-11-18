@@ -286,10 +286,10 @@ recognition.onerror = (err) => {
 
 recognition.onresult = (e) => {
    console.log('onresult', e);
-   text = e.results[0][0].transcript;
-   if(text == "") {
+   let text1 = e.results[0][0].transcript;
+   if(text1 == "") {
       console.error("error")
    }
-   let text = text.toLowerCase();
+   let text = text1.toLowerCase();
    handleVoice(text);
 }
